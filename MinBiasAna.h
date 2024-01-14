@@ -36,7 +36,7 @@ public :
   TTree          *fChain = 0;   //!pointer to the analyzed TTree or TChain
 
   // Readers to access the data (delete the ones you do not need).
-  TTreeReaderValue<Int_t> nJets= {fReader, "nJet"};
+  TTreeReaderValue<Int_t> nJet= {fReader, "nJet"};
   TTreeReaderArray<Float_t> Jet_e = {fReader, "Jet_e"};
   TTreeReaderArray<Float_t> Jet_pt = {fReader, "Jet_pt"};
   TTreeReaderArray<Float_t> Jet_eta = {fReader, "Jet_eta"};
