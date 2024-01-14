@@ -146,7 +146,7 @@ Bool_t MinBiasAna::Process(Long64_t entry)
   goodJ.clear();
   
   //Looping over all the jets to pick the objects we want:
-  for(int i=0; i< (*nJets); i++){
+  for(int i=0; i< (*nJet); i++){
     Particle temp;
     temp.v.SetPtEtaPhiM(Jet_pt[i],Jet_eta[i],Jet_phi[i],Jet_mass[i]);
     temp.ind = i;
