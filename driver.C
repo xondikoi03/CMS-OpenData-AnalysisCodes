@@ -12,14 +12,18 @@ void driver(int sample=0)
   //--------------------------------------------------------------------------//
 
 
-  if(sample==0){//Jets
+  if(sample==0){//7 TeV
     chain->Add("InputFiles/CMS_Run2011A_MinimumBias_AOD_12Oct2013-v1_250Kevts.root");
     chain->Add("InputFiles/CMS_Run2011B_MinimumBias_AOD_12Oct2013-v1_250Kevts.root");
+    hstfilename = "OutputFiles/hst_QCD_7.root"; 
+  }  
+
+  if(sample==1){//8 TeV
     chain->Add("InputFiles/CMS_Run2012A_MinimumBias_AOD_22Jan2013-v1_250Kevts.root");
     chain->Add("InputFiles/CMS_Run2012B_MinimumBias_AOD_22Jan2013-v1_250Kevts.root");
     chain->Add("InputFiles/CMS_Run2012C_MinimumBias_AOD_22Jan2013-v1_250Kevts.root");
     chain->Add("InputFiles/CMS_Run2012D_MinimumBias_AOD_22Jan2013-v1_250Kevts.root");
-    hstfilename = "OutputFiles/hst_QCD.root"; 
+    hstfilename = "OutputFiles/hst_QCD_8.root"; 
 
   }
 
