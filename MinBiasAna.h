@@ -49,6 +49,45 @@ public :
   TTreeReaderArray<Float_t> Jet_neHEF = {fReader, "Jet_neHEF"};
   TTreeReaderArray<Int_t> Jet_nConstituents = {fReader, "Jet_nConstituents"};
 
+  //Muons
+  TTreeReaderArray<Int_t> nMuon = {fReader, "nMuon"};
+  TTreeReaderArray<Float_t> Muon_e = {fReader, "Muon_e"};
+  TTreeReaderArray<Float_t> Muon_pt = {fReader, "Muon_pt"};
+  TTreeReaderArray<Float_t> Muon_eta = {fReader, "Muon_eta"};
+  TTreeReaderArray<Float_t> Muon_phi = {fReader, "Muon_phi"};
+  TTreeReaderArray<Float_t> Muon_mass = {fReader, "Muon_mass"};
+  TTreeReaderArray<Int_t> Muon_pdgId = {fReader, "Muon_pdgId"};
+  TTreeReaderArray<Int_t> Muon_charge = {fReader, "Muon_charge"};
+  TTreeReaderArray<Float_t> Muon_px = {fReader, "Muon_px"};
+  TTreeReaderArray<Float_t> Muon_py = {fReader, "Muon_py"};
+  TTreeReaderArray<Float_t> Muon_pz = {fReader, "Muon_pz"};
+
+  //Electrons
+  TTreeReaderArray<Int_t> nElectron = {fReader, "nElectron"};
+  TTreeReaderArray<Float_t> Electron_e = {fReader, "Electron_e"};
+  TTreeReaderArray<Float_t> Electron_pt = {fReader, "Electron_pt"};
+  TTreeReaderArray<Float_t> Electron_eta = {fReader, "Electron_eta"};
+  TTreeReaderArray<Float_t> Electron_phi = {fReader, "Electron_phi"};
+  TTreeReaderArray<Float_t> Electron_mass = {fReader, "Electron_mass"};
+  TTreeReaderArray<Int_t> Electron_pdgId = {fReader, "Electron_pdgId"};
+  TTreeReaderArray<Int_t> Electron_charge = {fReader, "Electron_charge"};
+  TTreeReaderArray<Float_t> Electron_px = {fReader, "Electron_px"};
+  TTreeReaderArray<Float_t> Electron_py = {fReader, "Electron_py"};
+  TTreeReaderArray<Float_t> Electron_pz = {fReader, "Electron_pz"};
+
+  //Photons
+  TTreeReaderArray<Int_t> nPhoton = {fReader, "nPhoton"};
+  TTreeReaderArray<Float_t> Photon_e = {fReader, "Photon_e"};
+  TTreeReaderArray<Float_t> Photon_pt = {fReader, "Photon_pt"};
+  TTreeReaderArray<Float_t> Photon_eta = {fReader, "Photon_eta"};
+  TTreeReaderArray<Float_t> Photon_phi = {fReader, "Photon_phi"};
+  TTreeReaderArray<Float_t> Photon_mass = {fReader, "Photon_mass"};
+  TTreeReaderArray<Int_t> Photon_pdgId = {fReader, "Photon_pdgId"};
+  TTreeReaderArray<Int_t> Photon_charge = {fReader, "Photon_charge"};
+  TTreeReaderArray<Float_t> Photon_px = {fReader, "Photon_px"};
+  TTreeReaderArray<Float_t> Photon_py = {fReader, "Photon_py"};
+  TTreeReaderArray<Float_t> Photon_pz = {fReader, "Photon_pz"};
+
 
   MinBiasAna(TTree * /*tree*/ =0) { }
   virtual ~MinBiasAna() { }
