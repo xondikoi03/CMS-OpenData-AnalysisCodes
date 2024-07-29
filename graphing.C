@@ -65,7 +65,9 @@ void graphing(){
   t4.DrawLatexNDC(0.66, 0.80, "#it{#bf{Data - 2011 RunB}}");
   t3.DrawLatexNDC(0.4, 0.92, "#bf{L = 3 fb^{-1}, #sqrt{s} = 7 TeV}");
 
+  c1->SetLogy();
   c1->Update();
+  c1->SaveAs("DiMuon_Mass_Spectrum.png");
 
 }
 
