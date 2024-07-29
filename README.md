@@ -19,7 +19,7 @@ For SingleMuon Dataset:
 .x driver.C(0)
 ```
 
-For DoubleMuon Dataset:
+For DoubleMuon Dataset: (Use this one for the dimuon invarient mass spectrum plot)
 ```
 .x driver.C(1)
 ```
@@ -28,4 +28,11 @@ For DYJets2LL_MC Dataset:
 ```
 .x driver.C(2)
 ```
-That's it!<br>
+This will make the histogram files needed to get the final plot.
+
+3. Now, simply run the graphing script to make the plot.
+```
+.x graphing.C
+```
+
+That's it! Now you have a dimuon invarient mass spectrum at loss masses. You can also play around with the files to see where it takes you!
