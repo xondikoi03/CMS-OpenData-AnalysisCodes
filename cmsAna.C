@@ -203,8 +203,8 @@ void cmsAna::BookHistograms(){
   h.hist[2] = new TH1F("Muon_eta", "Pseudorapidity of Muon", 100, -3, 3);   
   h.hist[3] = new TH1F("Muon_phi", "Polar Angle of Muon", 100, -4, 4);
   h.hist[4] = new TH1F("Muon_mass", "Mass of Muons", 100, -1, 1);
-  h.hist[5] = new TH1F("Dimuon_inv_mass", "; #mu#mu mass (GeV/c^{2}); Events/GeV ", 1000, 0, 20);
-  h.hist[6] = new TH1F("Dimuon_inv_mass_0to200", "; #mu#mu mass (GeV/c^{2}); Events/GeV ", 1000, 0, 200);;
+  h.hist[5] = new TH1F("Dimuon_inv_mass", "; #mu^{+}#mu^{-} mass (GeV/c^{2}); Events/GeV ", 1000, 0, 20);
+  h.hist[6] = new TH1F("Dimuon_inv_mass_0to200", "; #mu^{+}#mu^{-} mass (GeV/c^{2}); Events/GeV ", 1000, 0, 200);;
 }
 
 
