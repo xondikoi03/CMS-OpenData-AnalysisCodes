@@ -152,9 +152,7 @@ Bool_t cmsAna::Process(Long64_t entry)
     float inv_mass_muon = (Muons.at(0).v + Muons.at(1).v).M();
       
     h.hist[5] -> Fill(inv_mass_muon);
-    h.hist[5] -> SetLineColor(kOrange+10);
-    h.hist[5] -> SetLineWidth(2);
-    //h.hist[5] -> SetStats(0);
+    h.hist[6] -> Fill(inv_mass_muon);
 
   }   
   
@@ -206,6 +204,7 @@ void cmsAna::BookHistograms(){
   h.hist[3] = new TH1F("Muon_phi", "Polar Angle of Muon", 100, -4, 4);
   h.hist[4] = new TH1F("Muon_mass", "Mass of Muons", 100, -1, 1);
   h.hist[5] = new TH1F("Dimuon_inv_mass", "; #mu#mu mass (GeV/c^{2}); Events/GeV ", 1000, 0, 20);
+  h.hist[6] = new TH1F("Dimuon_inv_mass_0to200", "; #mu#mu mass (GeV/c^{2}); Events/GeV ", 1000, 0, 200);;
 }
 
 

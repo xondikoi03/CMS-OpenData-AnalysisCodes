@@ -1,11 +1,11 @@
 /* ===========================================
    
-  This is a graphing script to make histograms
-  look presentable and ready for journal uses.
-  Created on: 10 Jul, 2024
-  Original Author: Raj Handique
+   This is a graphing script to make histograms
+   look presentable and ready for journal uses.
+   Created on: 10 Jul, 2024
+   Original Author: Raj Handique
 
-  =========================================== */
+   =========================================== */
 
 // This Graphing script is made for the CMS_Run2011B_DoubleMu_AOD_12Oct2013-v1 //
 
@@ -27,9 +27,9 @@
 // along with them.
 
 void decorate(TH1 *h, int linecolor, double linewidth){
-
+  
   // This functions decorates the histogram with color and linewidth
-
+  
   h->SetLineColor(linecolor);
   h->SetLineWidth(linewidth);
 }
@@ -43,7 +43,7 @@ void graphing(){
   
   // The name of the plot(s) to be accessed from the histogram file
   TString plotname1 = "Dimuon_inv_mass";
-  TString plotname2 = "Dimuon_inv_mass_0to100";
+  TString plotname2 = "Dimuon_inv_mass_0to200";
   
   // Opening the files using TFile
   TFile *file1 = new TFile(filename1);
@@ -61,7 +61,7 @@ void graphing(){
   decorate(h2, kOrange-3, 2.5);
   decorate(h3, kOrange-3, 2.5);
   decorate(h4, kOrange-3, 2.5);
-
+  
   //Plot 1
   
   // Declaring a canvas
@@ -80,7 +80,7 @@ void graphing(){
   t1.DrawLatexNDC(0.66, 0.84, "CMS Open Data");
   t4.DrawLatexNDC(0.66, 0.80, "#it{#bf{Data - 2011 RunB}}");
   t3.DrawLatexNDC(0.4, 0.92, "#bf{L = 3 fb^{-1}, #sqrt{s} = 7 TeV}");
-
+  
 
   // Plot 2
 
