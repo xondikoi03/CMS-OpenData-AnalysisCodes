@@ -2,7 +2,7 @@
    
    This is a graphing script to make histograms
    look presentable and ready for journal uses.
-   Created on: 10 Jul, 2024
+   Created on: 31 Jul, 2024
    Original Author: Raj Handique
 
    =========================================== */
