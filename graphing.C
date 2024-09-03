@@ -2,7 +2,7 @@
    
    This is a graphing script to make histograms
    look presentable and ready for journal uses.
-   Created on: 31 Jul, 2024
+   Created on: 10 Jul, 2024
    Original Author: Raj Handique
 
    =========================================== */
@@ -54,7 +54,7 @@ void graphing(){
   TH1F *h2 = (TH1F*)file1->Get(plotname2);
   
   TH1F *h3 = (TH1F*)file2->Get(plotname1);
-  TH1F *h4 = (TH1F*)file2->Get(plotname2);
+  TH1F *h4 = (TH1F*)file2->Get(plotname2); 
   
   // Decorating the histogram
   decorate(h1, kOrange-3, 2.5);
@@ -78,8 +78,8 @@ void graphing(){
   t3.SetTextSize(0.04);
   t4.SetTextSize(0.038);
   t1.DrawLatexNDC(0.66, 0.84, "CMS Open Data");
-  t4.DrawLatexNDC(0.66, 0.80, "#it{#bf{Data - 2011 RunB}}");
-  t3.DrawLatexNDC(0.4, 0.92, "#bf{L = 3 fb^{-1}, #sqrt{s} = 7 TeV}");
+  t3.DrawLatexNDC(0.66, 0.80, "#it{#bf{Data - 2011 RunB}}");
+  t4.DrawLatexNDC(0.4, 0.92, "#bf{L = 3 fb^{-1}, #sqrt{s} = 7 TeV}");
   
 
   // Plot 2
@@ -117,8 +117,8 @@ void graphing(){
   t9.SetTextSize(0.04);
   t10.SetTextSize(0.038);
   t8.DrawLatexNDC(0.66, 0.84, "CMS Open Data");
-  t9.DrawLatexNDC(0.66, 0.80, "#it{#bf{Data - 2011 RunB}}");
-  t10.DrawLatexNDC(0.4, 0.92, "#bf{L = 3 fb^{-1}, #sqrt{s} = 7 TeV}");
+  t9.DrawLatexNDC(0.66, 0.80, "#it{#bf{Simulation}}");
+  t10.DrawLatexNDC(0.45, 0.92, "#bf{#sqrt{s} = 7 TeV}");
 
 
   // Plot 4
@@ -137,8 +137,8 @@ void graphing(){
   t12.SetTextSize(0.04);
   t13.SetTextSize(0.038);
   t11.DrawLatexNDC(0.66, 0.84, "CMS Open Data");
-  t12.DrawLatexNDC(0.66, 0.80, "#it{#bf{Data - 2011 RunB}}");
-  t13.DrawLatexNDC(0.4, 0.92, "#bf{L = 3 fb^{-1}, #sqrt{s} = 7 TeV}");
+  t12.DrawLatexNDC(0.66, 0.80, "#it{#bf{Simulation}}");
+  t13.DrawLatexNDC(0.45, 0.92, "#bf{#sqrt{s} = 7 TeV}");
 
 
   
